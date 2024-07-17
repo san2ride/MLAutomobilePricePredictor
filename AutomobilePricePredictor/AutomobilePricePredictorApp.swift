@@ -11,7 +11,7 @@ import SwiftUI
 struct AutomobilePricePredictorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CarvanaView()
         }
     }
 }

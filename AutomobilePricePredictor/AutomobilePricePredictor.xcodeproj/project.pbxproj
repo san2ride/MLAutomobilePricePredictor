@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F70F974C2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F974B2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift */; };
-		F70F974E2C46FFDA00A4476C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F974D2C46FFDA00A4476C /* ContentView.swift */; };
 		F70F97502C46FFDD00A4476C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70F974F2C46FFDD00A4476C /* Assets.xcassets */; };
 		F70F97532C46FFDD00A4476C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70F97522C46FFDD00A4476C /* Preview Assets.xcassets */; };
+		F7ED95232C486BFA008960F6 /* CarvanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED95222C486BFA008960F6 /* CarvanaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F70F97482C46FFDA00A4476C /* AutomobilePricePredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomobilePricePredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70F974B2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobilePricePredictorApp.swift; sourceTree = "<group>"; };
-		F70F974D2C46FFDA00A4476C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F70F974F2C46FFDD00A4476C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F70F97522C46FFDD00A4476C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7ED95222C486BFA008960F6 /* CarvanaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarvanaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +36,7 @@
 			isa = PBXGroup;
 			children = (
 				F70F974A2C46FFDA00A4476C /* AutomobilePricePredictor */,
+				F70F974B2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift */,
 				F70F97492C46FFDA00A4476C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,10 +52,9 @@
 		F70F974A2C46FFDA00A4476C /* AutomobilePricePredictor */ = {
 			isa = PBXGroup;
 			children = (
-				F70F974B2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift */,
-				F70F974D2C46FFDA00A4476C /* ContentView.swift */,
 				F70F974F2C46FFDD00A4476C /* Assets.xcassets */,
 				F70F97512C46FFDD00A4476C /* Preview Content */,
+				F7ED95222C486BFA008960F6 /* CarvanaView.swift */,
 			);
 			path = AutomobilePricePredictor;
 			sourceTree = "<group>";
@@ -137,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70F974E2C46FFDA00A4476C /* ContentView.swift in Sources */,
 				F70F974C2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift in Sources */,
+				F7ED95232C486BFA008960F6 /* CarvanaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
