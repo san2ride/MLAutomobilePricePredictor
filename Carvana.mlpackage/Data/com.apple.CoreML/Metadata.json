@@ -1,0 +1,9 @@
+{
+  "MLModelVersionStringKey" : "2.0",
+  "MLModelDescriptionKey" : "Carvana Model",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.createml.version" : "13.4.0"
+  },
+  "MLModelAuthorKey" : "Jason Sanchez",
+  "MLModelLicenseKey" : "--"
+}

@@ -1,0 +1,21 @@
+{
+  "Outputs" : {
+    "Price" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "Miles" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "Name" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "Year" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

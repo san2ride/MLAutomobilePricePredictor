@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "05EAE3A5-ABEE-4EFC-8DF9-794D4944CC49": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "B9A544DC-A04A-418B-A28D-9EF2763C5D1C": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "C60C45B1-3924-47E1-AD1B-54B26A0FF2A9": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "Carvana.mlmodel",
+            "path": "com.apple.CoreML/Carvana.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "C60C45B1-3924-47E1-AD1B-54B26A0FF2A9"
+}

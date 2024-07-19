@@ -10,8 +10,8 @@
 		F70F974C2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70F974B2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift */; };
 		F70F97502C46FFDD00A4476C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70F974F2C46FFDD00A4476C /* Assets.xcassets */; };
 		F70F97532C46FFDD00A4476C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70F97522C46FFDD00A4476C /* Preview Assets.xcassets */; };
+		F75C6CE42C4A21DD00EC5CAF /* Carvana.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F75C6CE32C4A21DD00EC5CAF /* Carvana.mlpackage */; };
 		F7ED95232C486BFA008960F6 /* CarvanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED95222C486BFA008960F6 /* CarvanaView.swift */; };
-		F7ED95262C486F50008960F6 /* Carvana.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7ED95242C486F50008960F6 /* Carvana.mlmodel */; };
 		F7ED95272C486F50008960F6 /* CarNames.json in Resources */ = {isa = PBXBuildFile; fileRef = F7ED95252C486F50008960F6 /* CarNames.json */; };
 /* End PBXBuildFile section */
 
@@ -20,8 +20,8 @@
 		F70F974B2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomobilePricePredictorApp.swift; sourceTree = "<group>"; };
 		F70F974F2C46FFDD00A4476C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F70F97522C46FFDD00A4476C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F75C6CE32C4A21DD00EC5CAF /* Carvana.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = Carvana.mlpackage; path = ../../Carvana.mlpackage; sourceTree = "<group>"; };
 		F7ED95222C486BFA008960F6 /* CarvanaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarvanaView.swift; sourceTree = "<group>"; };
-		F7ED95242C486F50008960F6 /* Carvana.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Carvana.mlmodel; path = ../../Carvana.mlmodel; sourceTree = "<group>"; };
 		F7ED95252C486F50008960F6 /* CarNames.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CarNames.json; path = ../../CarNames.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,8 +56,8 @@
 		F70F974A2C46FFDA00A4476C /* AutomobilePricePredictor */ = {
 			isa = PBXGroup;
 			children = (
+				F75C6CE32C4A21DD00EC5CAF /* Carvana.mlpackage */,
 				F7ED95252C486F50008960F6 /* CarNames.json */,
-				F7ED95242C486F50008960F6 /* Carvana.mlmodel */,
 				F70F974F2C46FFDD00A4476C /* Assets.xcassets */,
 				F70F97512C46FFDD00A4476C /* Preview Content */,
 				F7ED95222C486BFA008960F6 /* CarvanaView.swift */,
@@ -144,8 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7ED95262C486F50008960F6 /* Carvana.mlmodel in Sources */,
 				F70F974C2C46FFDA00A4476C /* AutomobilePricePredictorApp.swift in Sources */,
+				F75C6CE42C4A21DD00EC5CAF /* Carvana.mlpackage in Sources */,
 				F7ED95232C486BFA008960F6 /* CarvanaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

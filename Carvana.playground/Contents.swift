@@ -7,7 +7,7 @@ let options = CSVReadingOptions(hasHeaderRow: true, delimiter: ",")
 
 let formattingOptions = FormattingOptions(maximumLineWidth: 250, 
                                           maximumCellWidth: 250,
-                                          maximumRowCount: 20,
+                                          maximumRowCount: 100,
                                           includesColumnTypes: true)
 
 let calendar = Calendar.current
@@ -22,7 +22,7 @@ let dataSliceUnder60KMiles = dataFrame.filter(on: "Miles", Int.self) { miles in
 
 let dataSliceLessThan5YearsOld = dataSliceUnder60KMiles.filter(on: "Year", Int.self) { year in
     guard let year = year else { return false }
-    return currentYear - year >= 0 && currentYear - year <= 5
+    return currentYear - Int(year) >= 0 && currentYear - Int(year) <= 5
 }
 
 let dataSliceToyotaAndJeep = dataSliceLessThan5YearsOld.filter(on: "Name", String.self) { name in
@@ -30,7 +30,7 @@ let dataSliceToyotaAndJeep = dataSliceLessThan5YearsOld.filter(on: "Name", Strin
     return name.contains("Toyota") || name.contains("Jeep")
 }
 
-//print(dataSliceToyotaAndJeep.description(options: formattingOptions))
+print(dataSliceToyotaAndJeep.description(options: formattingOptions))
 
 let carvanaDataFrame = DataFrame(dataSliceToyotaAndJeep)
 
@@ -38,9 +38,11 @@ let regressor = try MLLinearRegressor(trainingData: dataFrame, targetColumn: "Pr
 
 let metaData = MLModelMetadata(author: "Jason Sanchez",
                                shortDescription: "Carvana Model",
-                               license: nil, version: "1.0",
+                               license: nil,
+                               version: "1.0",
                                additional: nil)
-//try regressor.write(toFile: "/Users/jasonspro/Develop/MLAutomobilePricePredictor/Carvana.mlmodel", metadata: metaData)
+
+try regressor.write(toFile: "/Users/jasonspro/Develop/MLAutomobilePricePredictor/Carvana.mlmodel", metadata: metaData)
 
 let nameDataFrame = carvanaDataFrame.selecting(columnNames: ["Name"])
 let nameColumnSlice = nameDataFrame["Name"].distinct()
@@ -55,4 +57,4 @@ uniqueNameDataFrame.append(column: nameColumn)
 
 print(uniqueNameDataFrame)
 
-try uniqueNameDataFrame.writeJSON(to: URL(fileURLWithPath: "/Users/jasonspro/Develop/MLAutomobilePricePredictor/CarNames.json"))
+//try uniqueNameDataFrame.writeJSON(to: URL(fileURLWithPath: "/Users/jasonspro/Develop/MLAutomobilePricePredictor/CarNames.json"))

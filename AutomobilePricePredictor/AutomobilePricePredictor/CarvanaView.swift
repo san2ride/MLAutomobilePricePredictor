@@ -17,11 +17,17 @@ struct Car: Decodable, Identifiable {
     }
 }
 
+extension Locale {
+    static var currencyCode: String {
+        current.currency?.identifier ?? "USD"
+    }
+}
+
 struct CarvanaView: View {
     
     @State private var selectedYear: Int = 2021
     @State private var selectedName: String = ""
-    @State private var miles: Int64?
+    @State private var miles: Double?
     @State private var price: Double?
     
     let model = try! Carvana(configuration: MLModelConfiguration())
@@ -74,7 +80,7 @@ struct CarvanaView: View {
             Button {
                 // action
                 do {
-                    let results = try model.prediction(Name: selectedName, Year: Int64(selectedYear), Miles: miles!)
+                    let results = try model.prediction(Name: selectedName, Year: Double(selectedYear), Miles: miles!)
                     price = results.Price
                 } catch {
                     print(error.localizedDescription)
@@ -93,14 +99,12 @@ struct CarvanaView: View {
                         .frame(maxWidth: .infinity, alignment: .center)
                         .foregroundColor(.green)
                 } else {
-                    Text("")
+                    Text("N/A")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .center)
                         .foregroundColor(.green)
                 }
             }
-            
-            
         }.navigationTitle("Carvana")
     }
 }
@@ -108,11 +112,5 @@ struct CarvanaView: View {
 #Preview {
     NavigationStack {
         CarvanaView()
-    }
-}
-
-extension Locale {
-    static var currencyCode: String {
-        current.currency?.identifier ?? "USD"
     }
 }
